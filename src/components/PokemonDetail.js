@@ -78,7 +78,9 @@ const PokemonDetail = () => {
       <div className="card mt-3">
         <h4>Movements</h4>
         {moves.map((move) => (
-          <span className="" key={move.move?.name}>{move.move.name}</span>
+          <span className="" key={move.move?.name}>
+            {move.move.name}
+          </span>
         ))}
       </div>
     </div>

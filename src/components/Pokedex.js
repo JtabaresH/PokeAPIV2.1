@@ -69,7 +69,7 @@ const Pokedex = () => {
           className="btn btn-danger"
           type="button"
           onClick={() =>
-            name === 'ditto'
+            name === pokemons.name
               ? navigate(`/pokedex/${name}`)
               : alert('Este pokemon no existe')
           }
