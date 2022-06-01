@@ -16,7 +16,9 @@ const Pokedex = () => {
   useEffect(() => {
     axios
       .get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=1126')
-      .then((res) => setPokemons(res.data.results));
+      .then((res) => {
+        setPokemons(res.data.results);
+      });
 
     axios
       .get('https://pokeapi.co/api/v2/type')
@@ -35,7 +37,7 @@ const Pokedex = () => {
       numberPages.push(i);
     }
   }
-  console.log(name);
+
   return (
     <div className="text-center">
       <img
@@ -61,12 +63,16 @@ const Pokedex = () => {
           placeholder="Write name of a pokemon"
           className="form-control"
           aria-label="Text input with segmented dropdown button"
-          onChange={(e) => setName({}e.target.value)}
+          onChange={(e) => setName(e.target.value)}
         />
         <button
           className="btn btn-danger"
           type="button"
-          onClick={() => navigate(`/pokedex/${name}`)}
+          onClick={() =>
+            name === 'ditto'
+              ? navigate(`/pokedex/${name}`)
+              : alert('Este pokemon no existe')
+          }
         >
           Search
         </button>
