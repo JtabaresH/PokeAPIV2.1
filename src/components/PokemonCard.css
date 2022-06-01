@@ -1,0 +1,34 @@
+.typesList {
+  display: flex;
+  gap: 1rem;
+}
+
+.listComponent {
+  list-style: symbol-example;
+}
+
+@counter-style symbol-example {
+  system: cyclic;
+  symbols: ' ' '/';
+  suffix: ' ';
+}
+
+.stats {
+  display: grid;
+  grid-template-areas:
+    'hp attack'
+    'defense speed';
+  border-top: 1px grey solid;
+}
+.hp {
+  grid-area: hp;
+}
+.attack {
+  grid-area: attack;
+}
+.defense {
+  grid-area: defense;
+}
+.speed {
+  grid-area: speed;
+}
