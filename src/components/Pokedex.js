@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
 import PokemonCard from './PokemonCard';
@@ -9,11 +10,12 @@ const Pokedex = () => {
   const [pokemons, setPokemons] = useState([]);
   const [types, setTypes] = useState([]);
   const [page, setPage] = useState(1);
+  const [name, setName] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
-      .get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=16') /* 
-    .get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=1126') */
+      .get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=1126')
       .then((res) => setPokemons(res.data.results));
 
     axios
@@ -21,7 +23,7 @@ const Pokedex = () => {
       .then((res) => setTypes(res.data.results));
   }, []);
 
-  const pokemonsNumbers = 8;
+  const pokemonsNumbers = 4;
   const lastIndex = pokemonsNumbers * page;
   const firstIndex = lastIndex - pokemonsNumbers;
   const pokemonsPaginated = pokemons.slice(firstIndex, lastIndex);
@@ -33,7 +35,7 @@ const Pokedex = () => {
       numberPages.push(i);
     }
   }
-
+  console.log(name);
   return (
     <div className="text-center">
       <img
@@ -59,8 +61,13 @@ const Pokedex = () => {
           placeholder="Write name of a pokemon"
           className="form-control"
           aria-label="Text input with segmented dropdown button"
+          onChange={(e) => setName({}e.target.value)}
         />
-        <button className="btn btn-danger" type="button">
+        <button
+          className="btn btn-danger"
+          type="button"
+          onClick={() => navigate(`/pokedex/${name}`)}
+        >
           Search
         </button>
         <div className="form-floating">

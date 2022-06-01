@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import bannerPokedex from '../assets/bannerPokedex.svg';
 
 const PokemonDetail = () => {
@@ -9,6 +10,7 @@ const PokemonDetail = () => {
   const [abilities, setAbilities] = useState([]);
   const [moves, setMoves] = useState([]);
   const { name } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`).then((res) => {
@@ -76,7 +78,7 @@ const PokemonDetail = () => {
       <div className="card mt-3">
         <h4>Movements</h4>
         {moves.map((move) => (
-          <span key={move.move?.name}>{move.move.name}</span>
+          <span className="" key={move.move?.name}>{move.move.name}</span>
         ))}
       </div>
     </div>
