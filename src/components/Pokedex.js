@@ -78,7 +78,7 @@ const Pokedex = () => {
         </button>
         <div className="form-floating">
           <select className="form-select" onChange={filterPokemons}>
-            <option value="">Type of pokemon</option>
+            <option>Type of pokemon</option>
             {types.map((type) => (
               <option key={type.name} value={type.url}>
                 {type.name}
