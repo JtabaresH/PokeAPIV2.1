@@ -77,11 +77,11 @@ const Pokedex = () => {
           Search
         </button>
         <div className="form-floating">
-          <select className="form-select" onChange={filterPokemons}>
+          <select className="form-select" onChange={(e) => filterPokemons()}>
             <option value="">Type of pokemon</option>
             {types.map((type) => (
               <option key={type.url} value={type.url}>
-                {type.name.}
+                {type.name}
               </option>
             ))}
           </select>
