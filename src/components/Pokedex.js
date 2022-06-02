@@ -78,9 +78,9 @@ const Pokedex = () => {
         </button>
         <div className="form-floating">
           <select className="form-select" onChange={filterPokemons}>
-            <option>Type of pokemon</option>
+            <option value="">Type of pokemon</option>
             {types.map((type) => (
-              <option key={type.name} value={type.url}>
+              <option key={type.url} value={type.url}>
                 {type.name}
               </option>
             ))}
@@ -91,7 +91,13 @@ const Pokedex = () => {
 
       <div className="row justify-content-center mt-5" style={{ gap: '15px' }}>
         {pokemonsPaginated.map((pokemon) => (
-          <PokemonCard pokemonUrl={pokemon.url} key={pokemon.url} />
+          <PokemonCard
+            /* pokemonUrl={pokemon.url} key={pokemon.url} */
+  key={pokemon.url !== undefined ? pokemon.url : pokemon.pokemon.url}
+            pokemonUrl={
+              pokemon.url !== undefined ? pokemon.url : pokemon.pokemon.url
+            }
+          />
         ))}
       </div>
       <div className="input-group justify-content-center m-3">
