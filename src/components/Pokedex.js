@@ -25,16 +25,16 @@ const Pokedex = () => {
       .then((res) => setTypes(res.data.results));
   }, []);
 
+  const filterPokemons = (e) => {
+    axios.get(e.target.value).then((res) => setPokemons(res.data.pokemon));
+  };
+
   const pokemonsNumbers = 8;
   const lastIndex = pokemonsNumbers * page;
   const firstIndex = lastIndex - pokemonsNumbers;
   const pokemonsPaginated = pokemons.slice(firstIndex, lastIndex);
   const lastPage = Math.ceil(pokemons?.length / pokemonsNumbers);
   const numberPages = [];
-
-  const filterPokemons = (e) => {
-    axios.get(e.target.value).then((res) => setPokemons(res.data.pokemon));
-  };
 
   for (let i = 1; i <= lastPage; i++) {
     if (i < page + 5 && i > page - 5) {
