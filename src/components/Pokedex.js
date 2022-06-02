@@ -32,7 +32,7 @@ const Pokedex = () => {
   const lastPage = Math.ceil(pokemons?.length / pokemonsNumbers);
   const numberPages = [];
 
-  const filterPokemons = () => {
+  const filterPokemons = (e) => {
     axios.get(e.target.value).then((res) => setPokemons(res.data.pokemon));
   };
 
@@ -77,7 +77,7 @@ const Pokedex = () => {
           Search
         </button>
         <div className="form-floating">
-          <select className="form-select" onChange={(e) => filterPokemon}>
+          <select className="form-select" onChange={filterPokemons}>
             <option value="">Type of pokemon</option>
             {types.map((type) => (
               <option key={type.url} value={type.url}>
