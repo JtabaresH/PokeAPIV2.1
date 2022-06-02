@@ -32,6 +32,10 @@ const Pokedex = () => {
   const lastPage = Math.ceil(pokemons?.length / pokemonsNumbers);
   const numberPages = [];
 
+  const filterPokemons = () => {
+    alert("Se estan filtradn")
+  }
+
   for (let i = 1; i <= lastPage; i++) {
     if (i < page + 5 && i > page - 5) {
       numberPages.push(i);
@@ -77,7 +81,7 @@ const Pokedex = () => {
           Search
         </button>
         <div className="form-floating">
-          <select className="form-select" id="types">
+          <select className="form-select" id="types" onChange={filterPokemons}>
             <option>Type of pokemon</option>
             {types.map((type) => (
               <option key={type.url} value={type.url}>
