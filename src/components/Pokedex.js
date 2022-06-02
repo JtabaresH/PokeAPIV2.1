@@ -15,7 +15,7 @@ const Pokedex = () => {
 
   useEffect(() => {
     axios
-      .get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=1126')
+      .get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=16')
       .then((res) => {
         setPokemons(res.data.results);
       });
@@ -33,8 +33,8 @@ const Pokedex = () => {
   const numberPages = [];
 
   const filterPokemons = () => {
-    alert("Se estan filtradn")
-  }
+    axios.get(e.target.value).then((res) => setPokemons(res.data.pokemon));
+  };
 
   for (let i = 1; i <= lastPage; i++) {
     if (i < page + 5 && i > page - 5) {
@@ -72,20 +72,16 @@ const Pokedex = () => {
         <button
           className="btn btn-danger"
           type="button"
-          onClick={() =>
-            name === pokemons.name
-              ? navigate(`/pokedex/${name}`)
-              : alert('Este pokemon no existe')
-          }
+          onClick={() => navigate(`/pokedex/${name}`)}
         >
           Search
         </button>
         <div className="form-floating">
-          <select className="form-select" id="types" onChange={filterPokemons}>
-            <option>Type of pokemon</option>
+          <select className="form-select" onChange={filterPokemons}>
+            <option value="">Type of pokemon</option>
             {types.map((type) => (
               <option key={type.url} value={type.url}>
-                {type.name.toUpperCase()}
+                {type.name.}
               </option>
             ))}
           </select>
