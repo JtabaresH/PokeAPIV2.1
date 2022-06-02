@@ -15,7 +15,7 @@ const Pokedex = () => {
 
   useEffect(() => {
     axios
-      .get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=16')
+      .get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=1126')
       .then((res) => {
         setPokemons(res.data.results);
       });
@@ -25,7 +25,7 @@ const Pokedex = () => {
       .then((res) => setTypes(res.data.results));
   }, []);
 
-  const pokemonsNumbers = 4;
+  const pokemonsNumbers = 8;
   const lastIndex = pokemonsNumbers * page;
   const firstIndex = lastIndex - pokemonsNumbers;
   const pokemonsPaginated = pokemons.slice(firstIndex, lastIndex);
