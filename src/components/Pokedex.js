@@ -26,9 +26,14 @@ const Pokedex = () => {
   }, []);
 
   const filterPokemons = (e) => {
-    axios.get(e.target.value).then((res) => 
-    e.target.value !== 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=1126' ?
-    setPokemons(res.data.pokemon) : setPokemons(res.data.results));
+    axios
+      .get(e.target.value)
+      .then((res) =>
+        e.target.value !==
+        'https://pokeapi.co/api/v2/pokemon?offset=0&limit=1126'
+          ? setPokemons(res.data.pokemon)
+          : setPokemons(res.data.results)
+      );
   };
 
   const pokemonsNumbers = 8;
@@ -80,7 +85,11 @@ const Pokedex = () => {
         </button>
         <div className="form-floating">
           <select className="form-select" onChange={filterPokemons}>
-            <option value={'https://pokeapi.co/api/v2/pokemon?offset=0&limit=1126'}>Type of pokemon</option>
+            <option
+              value={'https://pokeapi.co/api/v2/pokemon?offset=0&limit=1126'}
+            >
+              Type of pokemon
+            </option>
             {types.map((type) => (
               <option key={type.url} value={type.url}>
                 {type.name}
