@@ -118,7 +118,7 @@ const PokemonDetail = () => {
             </div>
             <div className="progress ms-3 me-3">
               <div
-                class="progress-bar progress-bar-striped bg-success"
+                class="progress-bar progress-bar-striped progress-bar-animated bg-success"
                 role="progressbar"
                 style={{ width: `${pokemon.stats?.[0].base_stat}%` }}
                 aria-valuemin="0"
