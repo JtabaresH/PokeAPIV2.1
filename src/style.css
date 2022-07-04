@@ -3,3 +3,827 @@ p {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* Estilos de sergio */
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  
+}
+.stats-progressbar{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+
+}
+
+.title-stats-progress{
+  display: flex;
+justify-content: space-between;
+}
+.stats-progressbar div > h3{
+  margin-bottom: 0.8rem;
+  font-family: 'Roboto';
+  font-weight: 500;
+ font-size: 22px;
+}
+
+html{
+  height: 100%;
+}
+.logo-header{
+  position: absolute;
+ left:10%;
+ top: 33%;
+}
+.search-icon{
+
+  background-color: red;
+  padding: 0.5rem;
+  border-radius: 20px;
+  color: white;
+  margin-left: 0.2rem;
+
+}
+.welcome {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+.welcome h3{
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.welcome input{
+  
+  border: 1px solid #D3D3D3  ;
+  padding: 0.9rem;
+  width: 300px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+  color: black;
+  
+
+
+
+}
+.welcome button{
+  border: none;
+  background: #D93F3F;
+  color: white;
+  padding: 1rem;
+  box-shadow: 0px 3px 6px #00000026;
+
+}
+
+.welcome h1{
+  
+color:  #FE1936;
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+margin-top: 1rem;
+background: none;
+
+}
+
+.search-categories{
+display: flex;
+width: 80%;
+margin: auto;
+margin-top: 2rem;
+justify-content: space-between;
+align-items: center;
+
+}
+.search-div > input {
+
+  padding: 1rem;
+  width: 350px;
+  margin-left: 2%;
+  border: 1px solid gray;
+  border-radius: 5px;
+
+}
+.search-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-type-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-type-box > select{
+  padding: 1rem;
+  width: 350px;
+  margin-left: 2%;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.contain{
+  display: flex;
+  width: 100vw;
+  height: calc(100vh + -9rem);
+  justify-content: center;
+  align-items: center;
+ 
+  background: linear-gradient(180deg, #FFFFFF 7.55%, rgba(255, 255, 255, 0.49) 126.81%);
+
+
+}
+
+.footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 9rem;
+}
+.footer-top{
+  background-color: #DD1A1A;
+  height: 4.75rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer-top > img{
+  position: absolute;
+  top: 1.8rem;
+  
+}
+.footer-botom{
+  background-color:#0C0C0C ;
+  height: 4.25rem;
+
+}
+
+.header{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 9rem;
+ 
+}
+.header-top{
+  background-color: #DD1A1A;
+  height: 4.75rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+
+.header-top > img{
+  position: absolute;
+  top: 3.9rem;
+  right: 6rem;
+  
+}
+.header-botom{
+  background-color:#0C0C0C ;
+  height: 4.25rem;
+
+}
+.contain-pokemons > h3{
+  color:#FE1936;
+  font-style: normal;
+  font-weight: 600;
+   font-size: 24px;
+ 
+}
+.contain-pokemons{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  padding-top: 4rem;
+}
+
+.welcome-text{
+  color:black;
+  font-style: normal;
+  font-weight: 300;
+   font-size: 24px;
+
+  
+
+}
+.contain-user{
+  
+  font-style: normal;
+  color:darkcyan ;
+  font-weight: 700;
+   font-size: 22px;
+   text-transform: uppercase;
+
+}
+.cards{
+ 
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  list-style: none;
+  gap: 0.7rem;
+}
+
+
+.cardinfo {
+
+  border: 10px solid #B1DBBC;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  
+  background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+  
+  
+}
+
+.fire{
+  border: 10px solid #E35825;
+  background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+ color: #E75C35 ;
+}
+.fire1{
+color: white;
+  background: #E35825;
+}
+.bug {
+  border: 10px solid #3BB039;
+  background: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+  color: #4AB648;
+}
+.bug1{
+  color: white;
+    background: #3BB039;
+  }
+
+.water {
+  border: 10px solid #1479FB;
+  background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+  color: #1479FB;
+}
+.water1{
+  color: white;
+    background: #1479FB;
+  }
+
+.grass {
+  border: 10px solid #B1DBBC;
+  background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+  color: #416460;
+}
+.grass1 {
+  background: #7EC6C5 ;
+  color: white;
+}
+
+.normal {
+  border: 10px solid #735259 ;
+  background: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+  color: #735259 ;
+}
+.normal1{
+  color: white;
+    background: #735259;
+  }
+
+.poison {
+  border: 10px solid #5B3184 ;
+  background: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);
+  color:#5B3184  ;
+}
+.poison1{
+  color: white;
+    background: #5B3184;
+  }
+
+.electric {
+  border: 10px solid #f9be00 ;
+  background: linear-gradient(177.03deg, #f9be00 -11.97%, #ffd23f 71.28%, #e2c977 135.64%);
+  color:#f9c413  ;
+}
+.electric1{
+  color: black;
+    background: #f9be00;
+  }
+.ground {
+  border: 10px solid #654008;
+  background: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
+  color: #654008;
+}
+
+.fairy {
+  border: 10px solid #971B45;
+  background: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+  color: #971B45;
+}
+
+.fighting {
+  border: 10px solid #96402A;
+  background: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
+  color:#96402A;
+}
+.psychic {
+
+  border: 10px solid #8a0532;
+  background: linear-gradient(176.83deg, #8a0532 -8.78%, #d12760 169.09%, #fa77a2 242.33%);
+  color:#8a0532;
+  
+}
+
+.ghost {
+  border: 10px solid #323569;
+  background: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+  color: #323569;
+}
+.rock {
+  border: 10px solid #7E7E7E;
+  background: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
+  color: #7E7E7E;
+}
+.ice {
+  border: 10px solid #6FBEDF;
+  background: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);
+  color: #6FBEDF;
+}
+.flying {
+
+  border: 10px solid #5eb9b2;
+  background: linear-gradient(177.03deg, #5eb9b2 -11.97%, #9cf7ef 47.77%, #9ffff7 136.72%);
+  color: #5eb9b2;
+
+  
+}
+.dark {
+  border: 10px solid #030706;
+  background: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+  color: #030706;
+}
+
+.dragon {
+  border: 10px solid #478A93;
+  background: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+  color: #478A93;
+}
+
+.steel {
+  border: 10px solid #5E736C;
+  background: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
+  color: #5E736C;
+}
+.unknown {
+  border: 10px solid #454545;
+  background: #454545;
+  color: #454545;
+}
+
+.shadow {
+  border: 10px solid #030706;
+  background: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+  color: #030706;
+}
+.card-top{
+  
+  
+  border-radius: 4px 4px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 128px;
+  
+}
+
+.card-top > img{
+  
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  width:80%;
+  margin: auto;
+  margin-top: 0.2rem;
+
+
+}
+.card-middle{
+ 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+
+}
+.typokemonlist{
+display: flex;
+gap: 0.8rem;
+}
+
+.typepokemon{
+
+  list-style: symbol-example;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 0.5rem;
+  color: #4F4F4F;
+
+
+}
+.pokemonname{
+
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-top: 4.5rem;
+  text-align: center;
+  width: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+
+}
+.separator{
+  width: 100%;
+  height: 0;
+  border: 0.5px solid #E5E5E5;
+  margin-top: 0.8rem;
+}
+.typetitle{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 0.4rem;
+  color: #9F9F9F;
+
+}
+
+.stats{
+
+  
+  width: 100%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  height:auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #9F9F9F;
+  
+
+
+}
+.stat-pokemon{
+
+  font-size: 18px;
+  margin-top: 0.5rem;
+  background: none;
+  border: none;
+
+
+}
+.pagination-box{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  
+}
+.button-pagination{
+  padding: 0.5rem;
+  background: rgba(232, 232, 232, 0.503);
+  border: none;
+  width: 3rem;
+  border-radius: 45%;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  list-style: none;
+  
+
+
+}
+.button-pagination:hover{
+  background: #DD1A1A;
+  color: white;
+  cursor:pointer;
+
+}
+.active{
+  background: red;
+  color: white;
+}
+
+.button-next,
+.button-prev {
+  background: #DD1A1A;
+ border-radius: 6px;
+ border: none;
+ padding: 0.6rem;
+ color: white;
+ font-size: 28px;
+ font-weight: 400;
+
+}
+
+
+.first-page,
+.last-page{
+  padding: 0.5rem;
+  background: rgba(232, 232, 232, 0.503);
+  border: none;
+  border-radius: 6px;
+  text-decoration: underline;
+
+
+}
+.pokeselfinfo{
+  height: 20rem;
+  position: relative;
+  border: 2px solid #ffffff;
+  border-radius: 4px 4px 0px 0px;
+
+
+}
+
+.pokemon-self{
+  width: 80%;
+  margin: auto;
+  margin-top: 10rem;
+  height: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+ 
+
+}
+
+.pokeselfinfo > img {
+
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.numpoke{
+  border: 1px solid #D3D3D3;
+  border-radius: 2px;
+  padding: 0.3rem;
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+  background: none;
+  font-weight: 400;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+.pokeselfname{
+  display: flex;
+  width:90%;
+  margin: auto;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.vector{
+  width: 80%;
+  border: 1px solid #9F9F9F;
+}
+.vector2{
+
+ width: 80%;
+  border: 1px solid #9F9F9F;
+
+}
+.namepokeself{
+  background: none;
+  border: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.pokesize{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  align-items: center;
+  gap: 2.5rem;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #0F0F2D;
+text-align: center;
+
+}
+.pokewh{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+color: #0F0F2D;
+margin-top: 0.5rem;
+}
+
+.type-habilities{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+  gap: 2rem;
+text-align: center;  
+align-items: center;
+}
+.poketype{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+color: #302F2F;
+
+}
+.pokehanilitie{
+  width:fill-available ;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #302F2F;
+
+}
+
+.box-types{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+list-style: none;
+margin-top: 1.5rem;
+}
+.box-title-type{
+  border: none;
+  padding: 0.8rem;
+  width: 45%;
+  border-radius: 2px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+
+}
+
+.box-title-abilities{
+  padding: 0.8rem;
+  width: 45%;
+  margin-right: 2%;
+  border-radius: 2px;
+  font-family: 'Roboto';
+  font-style: normal;
+font-weight: 500;
+font-size: 22px;
+border: 1px solid #D3D3D3;
+
+}
+.box-stats{
+
+ 
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: auto;
+  margin-top: 7rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+   color: #302F2F;
+}
+.box-stats > img{
+width: 10%;
+}
+.vector3{
+  width: 65%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: 0.5px solid #9F9F9F;
+}
+.bottom-self{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+}
+.movements-box{
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: auto;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+   color: #302F2F;
+   padding-top: 2rem;
+
+}
+.movements-box > img{
+  width: 10%;
+  }
+  .vector3{
+    width: 65%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 0.5px solid #9F9F9F;
+  }
+  .movements-tags{
+    width: 95%;
+    padding-top: 2rem;
+    margin: auto;
+  
+  }
+  .tags-movements{
+    list-style: none;
+
+  }
+  .tag{
+    display: inline-block;
+    margin:0 0 7px 20px;
+    position:relative;
+    font-family: 'Roboto';
+    font-size:18px;
+    font-weight:500;
+    text-decoration:none;
+    padding:0.417em 0.417em 0.417em 0.917em;
+    border: none;
+    border-radius: 5px;
+    z-index:100;
+    
+  }
+ 
+.tag:hover {
+  background: red;
+  border-color:#e1b160;
+}
+
+.tag:hover:before {
+  background: red;
+  border-color:#e1b160;
+}
+.footer-poke{
+  width: 100%;
+  height: 5rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+@counter-style symbol-example {
+  system: cyclic;
+  symbols: "" "/ ";
+  suffix: "";
+  
+}

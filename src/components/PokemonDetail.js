@@ -41,25 +41,59 @@ const PokemonDetail = () => {
         onClick={Home}
       />
       <div className="card pokeDetail text-center" style={{ marginTop: '9%' }}>
-        <img
-          src={pokemon.sprites?.other.dream_world.front_default}
-          alt=""
-          style={{ maxWidth: '180px' }}
-        />
-        <h6 /* className="number" */>#{pokemon.id}</h6>
-        <h1 /* className="name" */>{pokemon?.name}</h1>
-        <span>Weight</span>
-        <h6>{pokemon.weight}</h6>
-        <span>Height</span>
-        <h6>{pokemon.height}</h6>
-        <h6>Type</h6>
-        {typesPoke.map((type) => (
-          <span key={type.type?.name}>{type.type.name}</span>
-        ))}
-        <h6>Abilities</h6>
-        {abilities.map((abilitie) => (
-          <span key={abilitie.ability?.name}>{abilitie.ability.name}</span>
-        ))}
+        <div>
+          <img
+            src={pokemon.sprites?.other.dream_world.front_default}
+            alt=""
+            style={{ maxWidth: '180px' }}
+          />
+        </div>
+        <div className="d-flex justify-content-center mt-2">
+          <h6 className="border border-3 rounded w-25 p-2">#{pokemon.id}</h6>
+        </div>
+        <div className="d-flex align-items-center">
+          <div
+            className="ms-2 me-2"
+            style={{ width: '80%', height: '1px', border: '1px solid #9F9F9F' }}
+          ></div>
+          <h1 /* className="name" */>{pokemon?.name}</h1>
+          <div
+            className="ms-2 me-2"
+            style={{ width: '80%', height: '1px', border: '1px solid #9F9F9F' }}
+          ></div>
+        </div>
+        <div className="d-flex justify-content-center">
+          <div className="me-5">
+            <span>Weight</span>
+            <h4>
+              <b>{pokemon.weight}</b>
+            </h4>
+          </div>
+          <div>
+            <span>Tallness</span>
+            <h4>
+              <b>{pokemon.height}</b>
+            </h4>
+          </div>
+        </div>
+        <div className="d-flex justify-content-center mb-5 mt-2">
+          <div>
+            <h6>Type</h6>
+            {typesPoke.map((type) => (
+              <span className="me-2 border p-2" key={type.type?.name}>
+                {type.type.name}
+              </span>
+            ))}
+          </div>
+          <div>
+            <h6>Abilities</h6>
+            {abilities.map((abilitie) => (
+              <span className="me-2 border p-2" key={abilitie.ability?.name}>
+                {abilitie.ability.name}
+              </span>
+            ))}
+          </div>
+        </div>
         <h4>Stats</h4>
         <div>
           <p>
