@@ -4,7 +4,6 @@ import { changeUser } from '../store/slices/user.slice';
 import { useDispatch } from 'react-redux';
 import banner from '../assets/banner.svg';
 import footer from '../assets/footer.svg';
-import './UserInput.css';
 
 const UserInput = () => {
   const [userName, setUserName] = useState('');

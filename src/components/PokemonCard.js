@@ -22,6 +22,7 @@ const PokemonCard = ({ pokemonUrl }) => {
       style={{
         maxWidth: '250px',
         boxShadow: '2px 3px 5px grey',
+        cursor: 'pointer',
       }}
     >
       <div className="card-body">
@@ -29,7 +30,9 @@ const PokemonCard = ({ pokemonUrl }) => {
         <h3>{pokemon.name}</h3>
         <ul className="typesList">
           {typesPoke.map((type) => (
-            <li key={type.type?.name} className="listComponent">{type.type.name}</li>
+            <li key={type.type?.name} className="listComponent">
+              {type.type.name}
+            </li>
           ))}
         </ul>
         <div className="stats">

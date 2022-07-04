@@ -21,6 +21,10 @@ const PokemonDetail = () => {
     });
   }, []);
 
+  const Home = () => {
+    navigate('/pokedex');
+  };
+
   return (
     <div>
       <img
@@ -32,14 +36,15 @@ const PokemonDetail = () => {
           top: '0',
           left: '0',
           preserveAspectRatio: 'none',
+          cursor: 'pointer',
         }}
+        onClick={Home}
       />
       <div className="card pokeDetail text-center" style={{ marginTop: '9%' }}>
         <img
-          /* className="image" */
           src={pokemon.sprites?.other.dream_world.front_default}
           alt=""
-          style={{ maxWidth: '250px' }}
+          style={{ maxWidth: '180px' }}
         />
         <h6 /* className="number" */>#{pokemon.id}</h6>
         <h1 /* className="name" */>{pokemon?.name}</h1>
