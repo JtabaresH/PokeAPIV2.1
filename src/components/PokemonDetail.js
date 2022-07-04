@@ -195,14 +195,18 @@ const PokemonDetail = () => {
           </div>
         </div>
 
-        <div className="d-flex justify-content-center mt-2">
-          <div className="m-3">
+        <div className="d-flex flex-nowrap justify-content-center mt-2">
+          <ul class="d-flex flex-wrap">
             {moves.map((move) => (
-              <span className="me-2 border " key={move.move?.name}>
+              <li
+                className="list-group-item me-2 mb-2 border p-2"
+                key={move.move?.name}
+              >
                 {move.move.name}
-              </span>
+              </li>
             ))}
-          </div>
+          </ul>
+          <div className="ms-3 me-3"></div>
         </div>
       </div>
     </div>
