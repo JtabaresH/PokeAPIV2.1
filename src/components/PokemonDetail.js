@@ -118,7 +118,7 @@ const PokemonDetail = () => {
             </div>
             <div className="progress ms-3 me-3">
               <div
-                class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                className="progress-bar progress-bar-striped progress-bar-animated bg-success"
                 role="progressbar"
                 style={{ width: `${pokemon.stats?.[0].base_stat}%` }}
                 aria-valuemin="0"
@@ -133,7 +133,7 @@ const PokemonDetail = () => {
             </div>
             <div className="progress ms-3 me-3">
               <div
-                class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                className="progress-bar progress-bar-striped progress-bar-animated bg-danger"
                 role="progressbar"
                 style={{ width: `${pokemon.stats?.[1].base_stat}%` }}
                 aria-valuemin="0"
@@ -148,7 +148,7 @@ const PokemonDetail = () => {
             </div>
             <div className="progress ms-3 me-3">
               <div
-                class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                className="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                 role="progressbar"
                 style={{ width: `${pokemon.stats?.[2].base_stat}%` }}
                 aria-valuemin="0"
@@ -163,7 +163,7 @@ const PokemonDetail = () => {
             </div>
             <div className="progress ms-3 me-3">
               <div
-                class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                className="progress-bar progress-bar-striped progress-bar-animated bg-primary"
                 role="progressbar"
                 style={{ width: `${pokemon.stats?.[5].base_stat}%` }}
                 aria-valuemin="0"
@@ -196,7 +196,7 @@ const PokemonDetail = () => {
         </div>
 
         <div className="d-flex flex-nowrap justify-content-center mt-2">
-          <ul class="d-flex flex-wrap">
+          <ul className="d-flex flex-wrap">
             {moves.map((move) => (
               <li
                 className="list-group-item me-2 mb-2 border p-2"
