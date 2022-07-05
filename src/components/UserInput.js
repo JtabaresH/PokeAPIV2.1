@@ -4,6 +4,7 @@ import { changeUser } from '../store/slices/user.slice';
 import { useDispatch } from 'react-redux';
 import banner from '../assets/banner.svg';
 import footer from '../assets/footer.svg';
+import pokeball from '../assets/14071.gif';
 
 const UserInput = () => {
   const [userName, setUserName] = useState('');
@@ -28,6 +29,7 @@ const UserInput = () => {
           preserveAspectRatio: 'none',
         }}
       />
+      <img src={pokeball} alt=""/>
       <h1 style={{ color: 'red' }}>¡HELLO TRAINERS!</h1>
       <h6>Welcome to the pokemon world</h6>
       <div className="input-group justify-content-center">
