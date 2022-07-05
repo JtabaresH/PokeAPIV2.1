@@ -182,7 +182,7 @@ const PokemonDetail = () => {
         </div>
       </div>
 
-      <div className="card mt-3 mb-3">
+      <div className="card">
         <div className="grid">
           <div className="d-flex align-items-center">
             <h2 className="ms-3">Movements</h2>
@@ -195,7 +195,7 @@ const PokemonDetail = () => {
               }}
             ></div>
             <img
-              className="w-25 me-1 poke-logo"
+              className="w-25 me-4 poke-logo"
               style={{ maxWidth: '100px' }}
               src={pokeball}
               alt=""
@@ -203,7 +203,7 @@ const PokemonDetail = () => {
           </div>
         </div>
 
-        <div className="d-flex flex-nowrap justify-content-center mt-2">
+        <div className="d-flex flex-nowrap justify-content-center">
           <ul className="d-flex flex-wrap">
             {moves.map((move) => (
               <li

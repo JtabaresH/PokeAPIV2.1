@@ -4,7 +4,7 @@ import { changeUser } from '../store/slices/user.slice';
 import { useDispatch } from 'react-redux';
 import banner from '../assets/banner.svg';
 import footer from '../assets/footer.svg';
-import pokeball from '../assets/14071.';
+import logo from '../assets/14071.gif';
 
 const UserInput = () => {
   const [userName, setUserName] = useState('');
@@ -17,7 +17,7 @@ const UserInput = () => {
   };
 
   return (
-    <div className="text-center mt-5">
+    <div className="text-center mt-3">
       <img
         src={banner}
         alt=""
@@ -28,8 +28,14 @@ const UserInput = () => {
           padding: '0',
           preserveAspectRatio: 'none',
         }}
+      />{' '}
+      <br />
+      <img
+        src={logo}
+        alt=""
+        className="mt-0 mb-0"
+        style={{ maxWidth: '200px', maxHeight: '200px' }}
       />
-      <img src={pokeball} alt=""/>
       <h1 style={{ color: 'red' }}>¡HELLO TRAINERS!</h1>
       <h6>Welcome to the pokemon world</h6>
       <div className="input-group justify-content-center">
