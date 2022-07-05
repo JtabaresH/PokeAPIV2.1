@@ -77,7 +77,7 @@ const PokemonDetail = () => {
             </h4>
           </div>
         </div>
-        <div className="d-flex justify-content-center mb-5 mt-2">
+        <div className="d-flex justify-content-center mb-4 mt-2">
           <div>
             <h5 className="mb-3">Type</h5>
             {typesPoke.map((type) => (
@@ -103,7 +103,7 @@ const PokemonDetail = () => {
             style={{ width: '80%', height: '1px', border: '1px solid #9F9F9F' }}
           ></div>
           <img
-            className="w-25 me-1"
+            className="w-25 me-1 poke-logo"
             style={{ maxWidth: '100px' }}
             src={pokeball}
             alt=""
@@ -195,7 +195,7 @@ const PokemonDetail = () => {
               }}
             ></div>
             <img
-              className="w-25 me-1"
+              className="w-25 me-1 poke-logo"
               style={{ maxWidth: '100px' }}
               src={pokeball}
               alt=""
