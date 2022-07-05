@@ -120,7 +120,9 @@ const PokemonDetail = () => {
               <div
                 className="progress-bar progress-bar-striped progress-bar-animated bg-success"
                 role="progressbar"
-                style={{ width: `${pokemon.stats?.[0].base_stat}%` }}
+                style={{
+                  width: `${(pokemon.stats?.[0].base_stat / 150) * 100}%`,
+                }}
                 aria-valuemin="0"
                 aria-valuemax="150"
               ></div>
@@ -135,7 +137,9 @@ const PokemonDetail = () => {
               <div
                 className="progress-bar progress-bar-striped progress-bar-animated bg-danger"
                 role="progressbar"
-                style={{ width: `${pokemon.stats?.[1].base_stat}%` }}
+                style={{
+                  width: `${(pokemon.stats?.[1].base_stat / 150) * 100}%`,
+                }}
                 aria-valuemin="0"
                 aria-valuemax="150"
               ></div>
@@ -150,7 +154,9 @@ const PokemonDetail = () => {
               <div
                 className="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                 role="progressbar"
-                style={{ width: `${pokemon.stats?.[2].base_stat}%` }}
+                style={{
+                  width: `${(pokemon.stats?.[2].base_stat / 150) * 100}%`,
+                }}
                 aria-valuemin="0"
                 aria-valuemax="150"
               ></div>
@@ -165,7 +171,9 @@ const PokemonDetail = () => {
               <div
                 className="progress-bar progress-bar-striped progress-bar-animated bg-primary"
                 role="progressbar"
-                style={{ width: `${pokemon.stats?.[5].base_stat}%` }}
+                style={{
+                  width: `${(pokemon.stats?.[5].base_stat / 150) * 100}%`,
+                }}
                 aria-valuemin="0"
                 aria-valuemax="150"
               ></div>
