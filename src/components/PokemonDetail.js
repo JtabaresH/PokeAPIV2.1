@@ -133,7 +133,7 @@ const PokemonDetail = () => {
             </div>
             <div className="progress ms-3 me-3">
               <div
-                class="progress-bar progress-bar-striped bg-danger"
+                class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
                 role="progressbar"
                 style={{ width: `${pokemon.stats?.[1].base_stat}%` }}
                 aria-valuemin="0"
@@ -148,7 +148,7 @@ const PokemonDetail = () => {
             </div>
             <div className="progress ms-3 me-3">
               <div
-                class="progress-bar progress-bar-striped bg-warning"
+                class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                 role="progressbar"
                 style={{ width: `${pokemon.stats?.[2].base_stat}%` }}
                 aria-valuemin="0"
@@ -163,7 +163,7 @@ const PokemonDetail = () => {
             </div>
             <div className="progress ms-3 me-3">
               <div
-                class="progress-bar progress-bar-striped bg-primary"
+                class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
                 role="progressbar"
                 style={{ width: `${pokemon.stats?.[5].base_stat}%` }}
                 aria-valuemin="0"
