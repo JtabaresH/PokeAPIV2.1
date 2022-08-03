@@ -40,7 +40,7 @@ const Pokedex = () => {
 
   const submit = (e) => {
     setPokemons(e.target.value);
-    search(e.target.value);
+    search(e.target.value.toLowerCase());
   };
 
   const search = (SearchType) => {
