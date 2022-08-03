@@ -16,6 +16,12 @@ const UserInput = () => {
     navigate('/pokedex');
   };
 
+  const loginWithEnter = (e) => {
+    if (e.keyCode === 13) {
+      getName();
+    }
+  };
+
   return (
     <div className="text-center mt-3">
       <img
@@ -46,6 +52,7 @@ const UserInput = () => {
           type="text"
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
+          onKeyDown={loginWithEnter}
         />
         <button className="btn btn-outline-danger" onClick={getName}>
           Start
