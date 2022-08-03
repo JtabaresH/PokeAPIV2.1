@@ -8,6 +8,7 @@ import bannerPokedex from '../assets/bannerPokedex.svg';
 const Pokedex = () => {
   const user = useSelector((state) => state.user);
   const [pokemons, setPokemons] = useState([]);
+  const [pokemonsTable, setPokemonsTable] = useState([]);
   const [types, setTypes] = useState([]);
   const [page, setPage] = useState(1);
   const [name, setName] = useState('');
@@ -18,6 +19,7 @@ const Pokedex = () => {
       .get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=1126')
       .then((res) => {
         setPokemons(res.data.results);
+        setPokemonsTable(res.data.results);
       });
 
     axios
@@ -34,6 +36,21 @@ const Pokedex = () => {
           ? setPokemons(res.data.pokemon)
           : setPokemons(res.data.results)
       );
+  };
+
+  const submit = (e) => {
+    setPokemons(e.target.value);
+    search(e.target.value);
+  };
+
+  const search = (SearchType) => {
+    const resultSearch = pokemonsTable.filter((element) => {
+      if (element.name.toString().includes(SearchType.toString())) {
+        return element;
+      }
+    });
+    setPage(1);
+    setPokemons(resultSearch);
   };
 
   const pokemonsNumbers = 8;
@@ -74,7 +91,7 @@ const Pokedex = () => {
           placeholder="Write name of a pokemon"
           className="form-control"
           aria-label="Text input with segmented dropdown button"
-          onChange={(e) => setName(e.target.value)}
+          onChange={submit}
         />
         <button
           className="btn btn-danger"
