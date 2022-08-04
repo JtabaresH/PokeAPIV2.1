@@ -38,7 +38,7 @@ p {
     #e35825 22.55%,
     #e8ae1b 125.72%
   );
-  color: #e75c35;
+  color: #915342;
 }
 .fire1 {
   color: white;
@@ -52,7 +52,7 @@ p {
     #3bb039 16.57%,
     #aaffa8 209.53%
   );
-  color: #4ab648;
+  color: #458044;
 }
 .bug1 {
   color: white;
@@ -67,7 +67,7 @@ p {
     #1479fb 56.16%,
     #82b2f1 214.85%
   );
-  color: #1479fb;
+  color: #315688;
 }
 .water1 {
   color: white;
@@ -127,7 +127,7 @@ p {
     #ffd23f 71.28%,
     #e2c977 135.64%
   );
-  color: #f9c413;
+  color: #978033;
 }
 .electric1 {
   color: black;
@@ -141,7 +141,7 @@ p {
     #895c1a 43.67%,
     #d69638 138.4%
   );
-  color: #654008;
+  color: #5a3d0f;
 }
 
 .fairy {
@@ -152,7 +152,7 @@ p {
     #c23867 43.67%,
     #cd7d98 138.4%
   );
-  color: #971b45;
+  color: #701836;
 }
 
 .fighting {
@@ -163,7 +163,7 @@ p {
     #f1613c 169.09%,
     #cb735d 242.33%
   );
-  color: #96402a;
+  color: #642819;
 }
 .psychic {
   border: 10px solid #8a0532;
@@ -184,7 +184,7 @@ p {
     #454aa8 57.49%,
     #787dda 135.64%
   );
-  color: #323569;
+  color: #181a41;
 }
 .rock {
   border: 10px solid #7e7e7e;
@@ -194,7 +194,7 @@ p {
     #8d8d94 57.49%,
     #d3d3d3 135.64%
   );
-  color: #7e7e7e;
+  color: #5f5f5f;
 }
 .ice {
   border: 10px solid #6fbedf;
@@ -204,7 +204,7 @@ p {
     #64cbf5 47.77%,
     #bdebfe 136.72%
   );
-  color: #6fbedf;
+  color: #426e81;
 }
 .flying {
   border: 10px solid #5eb9b2;
@@ -214,7 +214,7 @@ p {
     #9cf7ef 47.77%,
     #9ffff7 136.72%
   );
-  color: #5eb9b2;
+  color: #417c77;
 }
 .dark {
   border: 10px solid #030706;
@@ -224,7 +224,7 @@ p {
     #0d1211 57.49%,
     #5a5e5d 135.64%
   );
-  color: #030706;
+  color: #67817c;
 }
 
 .dragon {
@@ -235,7 +235,7 @@ p {
     #56a4ae 43.67%,
     #a2bec1 138.4%
   );
-  color: #478a93;
+  color: #35686e;
 }
 
 .steel {
@@ -246,12 +246,12 @@ p {
     #728881 43.67%,
     #a8a8a8 138.4%
   );
-  color: #5e736c;
+  color: #6d9487;
 }
 .unknown {
   border: 10px solid #454545;
   background: #454545;
-  color: #454545;
+  color: #9b9b9b;
 }
 
 .shadow {
