@@ -17,7 +17,7 @@ const PokemonCard = ({ pokemonUrl }) => {
 
   return (
     <div
-      className="card text-center"
+      className={`card ${typesPoke[0]?.type.name}`}
       onClick={() => navigate(`/pokedex/${pokemon.name}`)}
       style={{
         maxWidth: '250px',
@@ -26,7 +26,7 @@ const PokemonCard = ({ pokemonUrl }) => {
       }}
     >
       <div className='card-body'>
-        <div className={`card-top ${typesPoke[0]?.type.name}`}>
+        <div>
           <img src={pokemon.sprites?.front_default} alt="" />
         </div>
         <h3>{pokemon.name}</h3>

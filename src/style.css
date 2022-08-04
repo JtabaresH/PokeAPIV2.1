@@ -25,6 +25,11 @@ p {
 }
 
 /* Color for cards */
+.card-top {
+  border-radius: 4px 4px 0px 0px;
+  margin-bottom: 5px;
+}
+
 .fire {
   border: 10px solid #e35825;
   background: linear-gradient(
@@ -258,21 +263,4 @@ p {
     #5a5e5d 135.64%
   );
   color: #030706;
-}
-.card-top {
-  border-radius: 4px 4px 0px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 120px;
-  width: 100%;
-}
-
-.card-top > img {
-  z-index: 9999;
-  position: absolute;
-  top: 0;
-  margin: auto;
-  margin-top: 0.2rem;
 }
