@@ -25,8 +25,10 @@ const PokemonCard = ({ pokemonUrl }) => {
         cursor: 'pointer',
       }}
     >
-      <div className="card-body">
-        <img src={pokemon.sprites?.front_default} alt="" />
+      <div className='card-body'>
+        <div className={`card-top ${typesPoke[0]?.type.name}`}>
+          <img src={pokemon.sprites?.front_default} alt="" />
+        </div>
         <h3>{pokemon.name}</h3>
         <ul className="typesList">
           {typesPoke.map((type) => (

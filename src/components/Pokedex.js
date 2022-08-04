@@ -88,18 +88,18 @@ const Pokedex = () => {
       <div className="input-group mb-3">
         <input
           type="text"
-          placeholder="Write name of a pokemon"
+          placeholder="Search pokemon"
           className="form-control"
           aria-label="Text input with segmented dropdown button"
           onChange={submit}
         />
-        <button
+        {/* <button
           className="btn btn-danger"
           type="button"
           onClick={() => navigate(`/pokedex/${name}`)}
         >
           Search
-        </button>
+        </button> */}
         <div className="form-floating">
           <select className="form-select" onChange={filterPokemons}>
             <option
