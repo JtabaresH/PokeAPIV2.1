@@ -7,6 +7,7 @@ import pokeball from '../assets/pokeball1.svg';
 
 const PokemonDetail = () => {
   const [pokemon, setPokemon] = useState({});
+  const [nameDetail, setNameDetail] = useState("");
   const [typesPoke, setTypesPoke] = useState([]);
   const [abilities, setAbilities] = useState([]);
   const [moves, setMoves] = useState([]);
@@ -16,6 +17,7 @@ const PokemonDetail = () => {
   useEffect(() => {
     axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`).then((res) => {
       setPokemon(res.data);
+      setNameDetail(res.data?.name);
       setTypesPoke(res.data?.types);
       setAbilities(res.data?.abilities);
       setMoves(res.data?.moves);
@@ -57,7 +59,7 @@ const PokemonDetail = () => {
             className="ms-2 me-2"
             style={{ width: '80%', height: '1px', border: '1px solid #9F9F9F' }}
           ></div>
-          <h1>{/* Name of pokemon */}{pokemon?.name}</h1>
+          <h1>{/* Name of pokemon */}{nameDetail.toUpperCase()}</h1>
           <div
             className="ms-2 me-2"
             style={{ width: '80%', height: '1px', border: '1px solid #9F9F9F' }}

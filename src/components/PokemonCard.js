@@ -5,12 +5,14 @@ import './PokemonCard.css';
 
 const PokemonCard = ({ pokemonUrl }) => {
   const [pokemon, setPokemon] = useState({});
+  const [name, setName] = useState("");
   const [typesPoke, setTypesPoke] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
     axios.get(pokemonUrl).then((res) => {
       setPokemon(res.data);
+      setName(res.data?.name)
       setTypesPoke(res.data?.types);
     });
   });
@@ -28,15 +30,15 @@ const PokemonCard = ({ pokemonUrl }) => {
       <div className="card-body">
         <img src={pokemon.sprites?.front_default} alt="" />
         <div>
-          <h3>{pokemon.name}</h3>
-          <ul className="typesList">
-            {typesPoke.map((type) => (
-              <li key={type.type?.name} className="listComponent">
+          <h5><b>{name.toUpperCase()}</b></h5>
+          <div classname="d-flex justify-content-center">
+          {typesPoke.map((type) => (
+              <span className='ms-1' key={type.type?.name}>
                 {type.type.name}
-              </li>
+              </span>
             ))}
-          </ul>
-          <div className="stats">
+          </div>
+          <div className="stats mt-1">
             <p className="hp">
               <b>HP</b> <br />
               {pokemon.stats?.[0].base_stat}
