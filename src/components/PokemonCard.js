@@ -25,35 +25,35 @@ const PokemonCard = ({ pokemonUrl }) => {
         cursor: 'pointer',
       }}
     >
-      <div className='card-body'>
+      <div className="card-body">
+        <img src={pokemon.sprites?.front_default} alt="" />
         <div>
-          <img src={pokemon.sprites?.front_default} alt="" />
-        </div>
-        <h3>{pokemon.name}</h3>
-        <ul className="typesList">
-          {typesPoke.map((type) => (
-            <li key={type.type?.name} className="listComponent">
-              {type.type.name}
-            </li>
-          ))}
-        </ul>
-        <div className="stats">
-          <p className="hp">
-            <b>HP</b> <br />
-            {pokemon.stats?.[0].base_stat}
-          </p>
-          <p className="attack">
-            <b>ATTACK</b> <br />
-            {pokemon.stats?.[1].base_stat}
-          </p>
-          <p className="defense">
-            <b>DEFENSE</b> <br />
-            {pokemon.stats?.[2].base_stat}
-          </p>
-          <p className="speed">
-            <b>SPEED</b> <br />
-            {pokemon.stats?.[5].base_stat}
-          </p>
+          <h3>{pokemon.name}</h3>
+          <ul className="typesList">
+            {typesPoke.map((type) => (
+              <li key={type.type?.name} className="listComponent">
+                {type.type.name}
+              </li>
+            ))}
+          </ul>
+          <div className="stats">
+            <p className="hp">
+              <b>HP</b> <br />
+              {pokemon.stats?.[0].base_stat}
+            </p>
+            <p className="attack">
+              <b>ATTACK</b> <br />
+              {pokemon.stats?.[1].base_stat}
+            </p>
+            <p className="defense">
+              <b>DEFENSE</b> <br />
+              {pokemon.stats?.[2].base_stat}
+            </p>
+            <p className="speed">
+              <b>SPEED</b> <br />
+              {pokemon.stats?.[5].base_stat}
+            </p>
+          </div>
         </div>
       </div>
     </div>

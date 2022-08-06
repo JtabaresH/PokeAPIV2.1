@@ -31,7 +31,7 @@ p {
 }
 
 .fire {
-  border: 10px solid #e35825;
+  border: 5px solid #e35825;
   background: linear-gradient(
     176.37deg,
     #f96d6f -32.26%,
@@ -45,7 +45,7 @@ p {
   background: #e35825;
 }
 .bug {
-  border: 10px solid #3bb039;
+  border: 5px solid #3bb039;
   background: linear-gradient(
     177.56deg,
     #62db60 -58.92%,
@@ -60,7 +60,7 @@ p {
 }
 
 .water {
-  border: 10px solid #1479fb;
+  border: 5px solid #1479fb;
   background: linear-gradient(
     179.57deg,
     #133258 -70.14%,
@@ -75,7 +75,7 @@ p {
 }
 
 .grass {
-  border: 10px solid #b1dbbc;
+  border: 5px solid #b1dbbc;
   background: linear-gradient(
     178.92deg,
     #7ec6c5 0.92%,
@@ -90,7 +90,7 @@ p {
 }
 
 .normal {
-  border: 10px solid #735259;
+  border: 5px solid #735259;
   background: linear-gradient(
     181.51deg,
     #735259 -6.44%,
@@ -105,7 +105,7 @@ p {
 }
 
 .poison {
-  border: 10px solid #5b3184;
+  border: 5px solid #5b3184;
   background: linear-gradient(
     177.03deg,
     #5b3184 -11.97%,
@@ -120,7 +120,7 @@ p {
 }
 
 .electric {
-  border: 10px solid #f9be00;
+  border: 5px solid #f9be00;
   background: linear-gradient(
     177.03deg,
     #f9be00 -11.97%,
@@ -134,7 +134,7 @@ p {
   background: #f9be00;
 }
 .ground {
-  border: 10px solid #654008;
+  border: 5px solid #654008;
   background: linear-gradient(
     179.75deg,
     #654008 -19.96%,
@@ -145,7 +145,7 @@ p {
 }
 
 .fairy {
-  border: 10px solid #971b45;
+  border: 5px solid #971b45;
   background: linear-gradient(
     179.75deg,
     #971b45 -19.96%,
@@ -156,7 +156,7 @@ p {
 }
 
 .fighting {
-  border: 10px solid #96402a;
+  border: 5px solid #96402a;
   background: linear-gradient(
     176.83deg,
     #96402a -8.78%,
@@ -166,7 +166,7 @@ p {
   color: #642819;
 }
 .psychic {
-  border: 10px solid #8a0532;
+  border: 5px solid #8a0532;
   background: linear-gradient(
     176.83deg,
     #8a0532 -8.78%,
@@ -177,7 +177,7 @@ p {
 }
 
 .ghost {
-  border: 10px solid #323569;
+  border: 5px solid #323569;
   background: linear-gradient(
     177.03deg,
     #323569 -11.97%,
@@ -187,7 +187,7 @@ p {
   color: #181a41;
 }
 .rock {
-  border: 10px solid #7e7e7e;
+  border: 5px solid #7e7e7e;
   background: linear-gradient(
     177.03deg,
     #7e7e7e -11.97%,
@@ -197,7 +197,7 @@ p {
   color: #5f5f5f;
 }
 .ice {
-  border: 10px solid #6fbedf;
+  border: 5px solid #6fbedf;
   background: linear-gradient(
     177.03deg,
     #6fbedf -11.97%,
@@ -207,7 +207,7 @@ p {
   color: #426e81;
 }
 .flying {
-  border: 10px solid #5eb9b2;
+  border: 5px solid #5eb9b2;
   background: linear-gradient(
     177.03deg,
     #5eb9b2 -11.97%,
@@ -217,7 +217,7 @@ p {
   color: #417c77;
 }
 .dark {
-  border: 10px solid #030706;
+  border: 5px solid #030706;
   background: linear-gradient(
     177.03deg,
     #030706 -11.97%,
@@ -228,7 +228,7 @@ p {
 }
 
 .dragon {
-  border: 10px solid #478a93;
+  border: 5px solid #478a93;
   background: linear-gradient(
     179.75deg,
     #478a93 -19.96%,
@@ -239,7 +239,7 @@ p {
 }
 
 .steel {
-  border: 10px solid #5e736c;
+  border: 5px solid #5e736c;
   background: linear-gradient(
     179.75deg,
     #5e736c -19.96%,
@@ -249,13 +249,13 @@ p {
   color: #6d9487;
 }
 .unknown {
-  border: 10px solid #454545;
+  border: 5px solid #454545;
   background: #454545;
   color: #9b9b9b;
 }
 
 .shadow {
-  border: 10px solid #030706;
+  border: 5px solid #030706;
   background: linear-gradient(
     177.03deg,
     #030706 -11.97%,

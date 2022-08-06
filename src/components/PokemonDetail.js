@@ -42,7 +42,7 @@ const PokemonDetail = () => {
         onClick={Home}
       />
       <div className="card pokeDetail text-center" style={{ marginTop: '9%' }}>
-        <div>
+        <div className={`${typesPoke[0]?.type.name}`} style={{border: 'none'}}>
           <img
             src={pokemon.sprites?.other.dream_world.front_default}
             alt=""
@@ -81,7 +81,7 @@ const PokemonDetail = () => {
           <div>
             <h5 className="mb-3">Type</h5>
             {typesPoke.map((type) => (
-              <span className="me-2 border p-2" key={type.type?.name}>
+              <span className={`me-2 border p-2 ${typesPoke[0]?.type.name}`} key={type.type?.name}>
                 {type.type.name}
               </span>
             ))}
@@ -89,7 +89,7 @@ const PokemonDetail = () => {
           <div>
             <h5 className="mb-3">Abilities</h5>
             {abilities.map((abilitie) => (
-              <span className="me-2 border p-2" key={abilitie.ability?.name}>
+              <span className={`me-2 border p-2 ${typesPoke[0]?.type.name}`} key={abilitie.ability?.name}>
                 {abilitie.ability.name}
               </span>
             ))}
@@ -207,7 +207,7 @@ const PokemonDetail = () => {
           <ul className="d-flex flex-wrap">
             {moves.map((move) => (
               <li
-                className="list-group-item me-2 mb-2 border p-2"
+                className={`list-group-item me-2 mb-2 border p-2 ${typesPoke[0]?.type.name}`}
                 key={move.move?.name}
               >
                 {move.move.name}

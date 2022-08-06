@@ -93,13 +93,6 @@ const Pokedex = () => {
           aria-label="Text input with segmented dropdown button"
           onChange={submit}
         />
-        {/* <button
-          className="btn btn-danger"
-          type="button"
-          onClick={() => navigate(`/pokedex/${name}`)}
-        >
-          Search
-        </button> */}
         <div className="form-floating">
           <select className="form-select" onChange={filterPokemons}>
             <option
