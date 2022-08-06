@@ -57,7 +57,7 @@ const PokemonDetail = () => {
             className="ms-2 me-2"
             style={{ width: '80%', height: '1px', border: '1px solid #9F9F9F' }}
           ></div>
-          <h1 /* className="name" */>{pokemon?.name}</h1>
+          <h1>{/* Name of pokemon */}{pokemon?.name}</h1>
           <div
             className="ms-2 me-2"
             style={{ width: '80%', height: '1px', border: '1px solid #9F9F9F' }}
