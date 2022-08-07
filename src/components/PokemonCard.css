@@ -14,9 +14,9 @@
 }
 
 .card:hover {
-  transform: translateY(-3px) scale(1.05);
+  transform: translateY(-3px) scale(1.05) skewY(-2deg);
   box-shadow: 0 24px 36px rgba(0,0,0,0.11),
-    0 24px 46px var(--box-shadow-color);
+    0 24px 46px ;
 }
 
 .stats {
