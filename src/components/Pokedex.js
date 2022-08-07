@@ -61,7 +61,7 @@ const Pokedex = () => {
   const numberPages = [];
 
   for (let i = 1; i <= lastPage; i++) {
-    if (i < page + 5 && i > page - 5) {
+    if (i < page + 5 && i > page - 1) {
       numberPages.push(i);
     }
   }
@@ -120,27 +120,27 @@ const Pokedex = () => {
           />
         ))}
       </div>
-      <div className="input-group justify-content-center m-3">
+      <div className="input-group justify-content-center mt-3 mb-3">
         <button
           onClick={() => setPage(1)}
           disabled={page === 1}
-          className="btn btn-outline-primary"
+          className="btn btn-outline-danger p-1"
         >
-          First Page
+          {`<<`}
         </button>
         <button
           onClick={() => setPage(page - 1)}
           disabled={page === 1}
-          className="btn btn-outline-primary"
+          className="btn btn-outline-danger p-1"
         >
-          Prev
+          {`<`}
         </button>
 
         {numberPages.map((numbers) => (
           <button
             key={numbers}
             onClick={() => setPage(numbers)}
-            className="btn btn-outline-primary"
+            className="btn btn-outline-danger"
           >
             {numbers}
           </button>
@@ -149,16 +149,16 @@ const Pokedex = () => {
         <button
           onClick={() => setPage(page + 1)}
           disabled={page === lastPage}
-          className="btn btn-outline-primary"
+          className="btn btn-outline-danger p-1"
         >
-          Next
+          {`>`}
         </button>
         <button
           onClick={() => setPage(lastPage)}
           disabled={page === lastPage}
-          className="btn btn-outline-primary"
+          className="btn btn-outline-danger p-1"
         >
-          Last Page
+          {`>>`}
         </button>
       </div>
     </div>
